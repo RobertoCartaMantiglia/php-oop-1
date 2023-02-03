@@ -20,9 +20,9 @@ include_once "./classes/Movie.php";
 
     <div>
         <?php
-        foreach ($movie_1 as $elemenet) {
+        foreach ($movie_1 as $element) {
             echo "<div>";
-            echo "<p>{$movie_1}</p>";
+            echo "<p>{$element['$title']}</p>";
             echo "</div>";
         }
         // var_dump($movie_1);
