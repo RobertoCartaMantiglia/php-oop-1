@@ -1,7 +1,8 @@
 <?php
 include_once "./classes/Movie.php";
-$movie_1 = new Movie('Il Signore degli Anelli, ', 'fantasy, ', '180 minuti');
-$movie_2 = new Movie('Up!, ', 'animazione, ', '120 minuti')
+include_once "./classes/Genre.php";
+$movie_1 = new Movie('Il Signore degli Anelli, ', new Genre('Fatasy'), '180 minuti');
+$movie_2 = new Movie('Up!, ', new Genre('Animazione'), '120 minuti');
 ?>
 
 <!DOCTYPE html>
@@ -11,6 +12,7 @@ $movie_2 = new Movie('Up!, ', 'animazione, ', '120 minuti')
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>php oop</title>
 </head>
 
@@ -34,8 +36,6 @@ $movie_2 = new Movie('Up!, ', 'animazione, ', '120 minuti')
         echo "<div>";
         echo $movie_2->getMovieInfo();
         echo "</div>";
-
-
         ?>
     </div>
 </body>

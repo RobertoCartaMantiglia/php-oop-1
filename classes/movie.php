@@ -12,7 +12,7 @@ class Movie
     public $timing;
 
 
-    public function __construct($_title, $_type, $_timing)
+    public function __construct($_title, Genre $_type, $_timing)
     {
         $this->title = $_title;
         $this->type = $_type;
