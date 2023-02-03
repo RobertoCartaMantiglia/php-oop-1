@@ -1,3 +1,8 @@
+<?php
+include_once "./classes/Movie.php";
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,7 +14,17 @@
 </head>
 
 <body>
-    PHP OOP EX 1
+    <h1>
+        Movie
+    </h1>
+
+    <div>
+        <?php
+        echo "<p>";
+        echo $movie_1;
+        echo "</p>";
+        ?>
+    </div>
 </body>
 
 </html>

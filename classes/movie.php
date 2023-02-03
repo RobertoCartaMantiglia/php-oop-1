@@ -25,3 +25,4 @@ class Movie
         return $title;
     }
 }
+$movie_1 = new Movie('Il Signore degli Anelli', 'fantasy', '180 minuti');
