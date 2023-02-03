@@ -20,9 +20,8 @@ class Movie
     }
 
 
-    public function getMovie($title)
+    public function getMovieInfo()
     {
-        return $title;
+        return $this->title . $this->type . $this->timing;
     }
 }
-$movie_1 = new Movie('Il Signore degli Anelli', 'fantasy', '180 minuti');

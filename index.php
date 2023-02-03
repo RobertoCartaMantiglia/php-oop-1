@@ -1,6 +1,7 @@
 <?php
 include_once "./classes/Movie.php";
-
+$movie_1 = new Movie('Il Signore degli Anelli, ', 'fantasy, ', '180 minuti');
+$movie_2 = new Movie('Up!, ', 'animazione, ', 'durata 120')
 ?>
 
 <!DOCTYPE html>
@@ -20,12 +21,12 @@ include_once "./classes/Movie.php";
 
     <div>
         <?php
-        foreach ($movie_1 as $element) {
-            echo "<div>";
-            echo "<p>{$element['$title']}</p>";
-            echo "</div>";
-        }
-        // var_dump($movie_1);
+        echo $movie_1->getMovieInfo();
+        echo "<br>";
+        echo $movie_2->getMovieInfo();
+
+
+
         ?>
     </div>
 </body>
